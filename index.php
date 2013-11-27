@@ -3,7 +3,7 @@
 mysql_connect('localhost', 'sandbox', 'sandbox');
 // Get the test content.
 $result = mysql_query('SELECT content FROM sandbox.test');
-// If the query succeeded...
+// If the query succeeded
 if ($result) {
   // Display the contents.
   var_dump(mysql_fetch_assoc($result));
